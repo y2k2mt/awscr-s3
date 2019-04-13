@@ -26,12 +26,13 @@ module Awscr::S3
   class Client
     @signer : Awscr::Signer::Signers::Interface
 
-    def initialize(@region : String, @aws_access_key : String, @aws_secret_key : String, @endpoint : String? = nil, signer : Symbol = :v4)
+    def initialize(@region : String, @aws_access_key : String, @aws_secret_key : String, @endpoint : String? = nil, signer : Symbol = :v4, @amz_security_token : String? = nil)
       @signer = SignerFactory.get(
         version: signer,
         region: @region,
         aws_access_key: @aws_access_key,
-        aws_secret_key: @aws_secret_key
+        aws_secret_key: @aws_secret_key,
+        amz_security_token: @amz_security_token
       )
     end
 
