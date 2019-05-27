@@ -4,14 +4,14 @@ version: 0.3.4
 authors:
   - Taylor Finnell <tmfinnell@gmail.com>
 
-crystal: 0.27.0
+crystal: 0.28.0
 
 license: MIT
 
 dependencies:
   awscr-signer:
     github: y2k2mt/awscr-signer
-    branch: amz-security-token
+    branch: amz-security-token-54
 
 development_dependencies:
   timecop:
