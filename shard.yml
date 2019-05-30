@@ -11,7 +11,7 @@ license: MIT
 dependencies:
   awscr-signer:
     github: y2k2mt/awscr-signer
-    branch: amz-security-token
+    branch: amz-security-token-53
 
 development_dependencies:
   timecop:
